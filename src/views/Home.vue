@@ -1,5 +1,7 @@
 <template lang="pug">
   .home-container
+    .link
+      router-link(to='start-project') Next
     h1.welcome Welcome!
     .sponsor
       .sponsor-header
@@ -38,6 +40,8 @@
           tr
             td Vue Dev Tools
             td Chrome Web Store/Extensions
+      .next
+        h2 Next we will discuss starting a new project
 </template>
 
 <script>
@@ -95,5 +99,15 @@ export default {
       text-align: left;
     }
   }
+}
+
+.next {
+  margin-top: 50px;
+}
+
+.link {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 </style>
