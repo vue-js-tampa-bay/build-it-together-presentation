@@ -4814,11 +4814,6 @@ javascript-stringify@^1.6.0:
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
   integrity sha1-FC0RHzpuPa6PSpr9d9RYVbWpzOM=
 
-jquery@^3.3.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
-  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
-
 js-base64@^2.1.8:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
@@ -8565,13 +8560,6 @@ vue-cli-plugin-pug@^1.0.7:
     pug "^2.0.3"
     pug-plain-loader "^1.0.0"
     raw-loader "^0.5.1"
-
-vue-embed-gist@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/vue-embed-gist/-/vue-embed-gist-1.0.1.tgz#db9f3f20d5b6bf9a79c650a9b3b31d10784dc343"
-  integrity sha512-N2YOFxBCWSPbP9uzSzacBUWTYoWXuILSx2oCZ+55JOms5HhAfpkkOvMazHNNmX2GnVPcTDc5Dqcr8k+77oEQPA==
-  dependencies:
-    jquery "^3.3.1"
 
 vue-eslint-parser@^2.0.3:
   version "2.0.3"

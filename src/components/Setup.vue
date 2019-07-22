@@ -19,15 +19,11 @@
 </template>
 
 <script>
-import VueEmbedGist from 'vue-embed-gist'
 import postscribe from 'postscribe'
 /* eslint-disable no-useless-escape */
 
 export default {
   name: 'setup',
-  components: {
-    VueEmbedGist
-  },
   mounted () {
     postscribe('#homeGist', `<script type="application/javascript" src="https://gist.github.com/benjaminkent/d59a6e2a9735240887c15bd00101f42e.js"><\/script>`)
     postscribe('#routerGist', `<script src="https://gist.github.com/benjaminkent/970cc97910d45298d10df78765f394fc.js"><\/script>`)
