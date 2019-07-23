@@ -8,7 +8,7 @@
     p In this presentation we've covered:
     ol
       li Starting a new Vue.js project
-      li Pug as the template language
+      li Pug for the template language
       li Axios to call a RESTful API
       li Routing views with Dynamic Route Matching
       li 
