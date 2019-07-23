@@ -84,10 +84,12 @@ export default {
 
     .sponsor-header {
       display: flex;
+      flex-direction: column;
+      align-items: center;
 
       .sponsor-name {
         color: #f26721;
-        margin-left: 7px;
+        font-size: 48px;
       }
     }
   }
