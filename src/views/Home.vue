@@ -10,12 +10,13 @@
       p If you ever have any questions, feedback, concerns or just want to say hi, you can reach me here:
       ul
         li
-          a(href='www.linkedin.com/in/benjaminkentjehl' target='_blank' rel='noreferrer noopener') LinkedIn
+          a(href='https://www.linkedin.com/in/benjaminkentjehl' target='_blank' rel='noreferrer noopener') LinkedIn
         li
           a(href='https://www.meetup.com/Vue-js-Tampa-Bay/' target='_blank' rel='noreferrer noopener') Meetup
         li
           a(href='https://www.facebook.com/vue.js.tampabay' target='_blank' rel='noreferrer noopener') Facebook
         li By email at: vue.js.tampabay@gmail.com
+        li suncoast-devs Slack channel
     .sponsor
       .sponsor-header
         h2 Special thank you to our sponsor
@@ -115,7 +116,7 @@ li {
 }
 
 .link {
-  margin-bottom: 20px;
+  margin-top: 11px;
   display: flex;
   justify-content: flex-end;
 }

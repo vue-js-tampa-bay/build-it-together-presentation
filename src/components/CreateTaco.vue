@@ -2,6 +2,7 @@
   .create-taco-container
     .links
       router-link(to='/finish-home') Previous
+      h1 Step 5
       router-link(to='/done') Next
     h2 Working on the Taco view
     p Next we'll set up a route for our Taco view. In src/router.js add the route:
@@ -31,6 +32,12 @@ export default {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    color: #30dd4d;
+  }
 }
 
 .margin-top {

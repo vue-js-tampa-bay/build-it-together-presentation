@@ -2,6 +2,7 @@
   .starting-container
     .links
       router-link(to='/') Previous
+      h1 Step 1
       router-link(to='/setup') Next
     h2 Starting a new Vue.js project
     p In your terminal run:
@@ -55,6 +56,12 @@ p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    color: #30dd4d;
+  }
 }
 
 .starting-container {

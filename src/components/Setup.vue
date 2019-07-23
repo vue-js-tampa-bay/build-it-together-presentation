@@ -2,6 +2,7 @@
   .setup-container
     .links
       router-link(to='/start-project') Previous
+      h1 Step 2
       router-link(to='axios-setup') Next
     h2 Now let's get our basic setup
     ol
@@ -37,6 +38,12 @@ export default {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    color: #30dd4d;
+  }
 }
 
 .gist {

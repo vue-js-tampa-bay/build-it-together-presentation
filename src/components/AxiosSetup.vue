@@ -2,6 +2,7 @@
   .axios-setup-container
     .links
       router-link(to='/setup') Previous
+      h1 Step 3
       router-link(to='/finish-home') Next
     h2 Setting up Axios to call our back-end
     p In src folder, update main.js:
@@ -25,6 +26,12 @@ export default {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    color: #30dd4d;
+  }
 }
 
 

@@ -2,6 +2,7 @@
   .finish-home-container
     .links
       router-link(to='/axios-setup') Previous
+      h1 Step 4
       router-link(to='create-taco') Next
     h2 Finishing up the Home.vue file
     p In src/Home.vue:
@@ -25,6 +26,12 @@ export default {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    color: #30dd4d;
+  }
 }
 
 
