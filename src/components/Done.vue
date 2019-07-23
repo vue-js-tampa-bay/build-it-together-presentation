@@ -1,14 +1,15 @@
 <template lang="pug">
   .done-container
     .links
-      router-link(to='/create-taco') Previous
+      router-link(to='/create-taco')
+        i.fas.fa-chevron-left
     h2 And that's it!
     img.nph(src='https://media.giphy.com/media/9Jcw5pUQlgQLe5NonJ/giphy.gif')
     p We've created a basic app with Vue.js, using some techniques that you will use regularly as you develop apps with Vue.
     p In this presentation we've covered:
     ol
       li Starting a new Vue.js project
-      li Pug as the template language
+      li Pug for the template language
       li Axios to call a RESTful API
       li Routing views with Dynamic Route Matching
       li 
@@ -41,6 +42,10 @@ li {
 
 .nph {
   height: 300px;
+}
+
+.links {
+  margin-top: 11px;
 }
 </style>
 

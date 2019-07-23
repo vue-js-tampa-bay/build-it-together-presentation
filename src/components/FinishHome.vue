@@ -1,11 +1,19 @@
 <template lang="pug">
   .finish-home-container
-    .links
-      router-link(to='/axios-setup') Previous
-      router-link(to='create-taco') Next
+    .top-links
+      router-link(to='/axios-setup')
+        i.fas.fa-chevron-left
+      h1 Step 4
+      router-link(to='create-taco')
+        i.fas.fa-chevron-right
     h2 Finishing up the Home.vue file
     p In src/Home.vue:
     .gist(id='finishHomeGist')
+    .bottom-links
+      router-link(to='/axios-setup')
+        i.fas.fa-chevron-left
+      router-link(to='create-taco')
+        i.fas.fa-chevron-right
 </template>
 
 <script>
@@ -21,12 +29,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.links {
+.top-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-}
+  align-items: center;
 
+  h1 {
+    margin: 0;
+    color: #30dd4d;
+  }
+}
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
 
 .finish-home-container {
   background-color: #fff;

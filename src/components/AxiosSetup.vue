@@ -1,11 +1,19 @@
 <template lang="pug">
   .axios-setup-container
-    .links
-      router-link(to='/setup') Previous
-      router-link(to='/finish-home') Next
+    .top-links
+      router-link(to='/setup')
+        i.fas.fa-chevron-left
+      h1 Step 3
+      router-link(to='/finish-home')
+        i.fas.fa-chevron-right
     h2 Setting up Axios to call our back-end
     p In src folder, update main.js:
     .gist(id='axiosGist')
+    .bottom-links
+      router-link(to='/setup')
+        i.fas.fa-chevron-left
+      router-link(to='/finish-home')
+        i.fas.fa-chevron-right
 </template>
 
 <script>
@@ -21,12 +29,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.links {
+.top-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-}
+  align-items: center;
 
+  h1 {
+    margin: 0;
+    color: #30dd4d;
+  }
+}
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
 
 .axios-setup-container {
   background-color: #fff;
