@@ -18,7 +18,7 @@
       li Lint on save
       li In dedicated config files
       li n (When asked to save this as a preset for future projects)
-    p.margin-top Next you will cd into your project and add pug:
+    p.margin-top Next you will cd into your project and pug, axios and vue-axios:
     pre
       code $ cd < project name >
     pre
