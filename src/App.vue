@@ -3,7 +3,19 @@
     header
       h1 Let's Build an App Together!
     router-view
+    AppFooter
 </template>
+
+<script>
+import AppFooter from './components/Footer.vue'
+
+export default {
+  name: 'app',
+  components: {
+    AppFooter
+  }
+}
+</script>
 
 
 <style lang="scss">
@@ -13,8 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
   color: #222;
   background-color: #eaeaea;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 91vh;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 120px;
+  position: relative;
 }
 
 header {
@@ -26,8 +41,10 @@ header {
   }
 }
 
-body {
+body, html {
   margin: 0;
+  height: 100%;
+  position: relative;
 }
 
 i {
