@@ -1,9 +1,11 @@
 <template lang="pug">
   .create-taco-container
-    .links
-      router-link(to='/finish-home') Previous
+    .top-links
+      router-link(to='/finish-home')
+        i.fas.fa-chevron-left
       h1 Step 5
-      router-link(to='/done') Next
+      router-link(to='/done')
+        i.fas.fa-chevron-right
     h2 Working on the Taco view
     p Next we'll set up a route for our Taco view. In src/router.js add the route:
     .gist(id='updateRoutes')
@@ -12,6 +14,11 @@
       li In src/views, create a file named Taco.vue
       li Add the following code:
     .gist(id='createTaco')
+    .bottom-links
+      router-link(to='/finish-home')
+        i.fas.fa-chevron-left
+      router-link(to='/done')
+        i.fas.fa-chevron-right
 </template>
 
 <script>
@@ -28,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.links {
+.top-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -38,6 +45,12 @@ export default {
     margin: 0;
     color: #30dd4d;
   }
+}
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .margin-top {

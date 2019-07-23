@@ -29,4 +29,8 @@ header {
 body {
   margin: 0;
 }
+
+i {
+  color: #30dd4d;
+}
 </style>

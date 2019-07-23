@@ -1,9 +1,11 @@
 <template lang="pug">
   .setup-container
-    .links
-      router-link(to='/start-project') Previous
+    .top-links
+      router-link(to='/start-project')
+        i.fas.fa-chevron-left
       h1 Step 2
-      router-link(to='axios-setup') Next
+      router-link(to='axios-setup')
+        i.fas.fa-chevron-right
     h2 Now let's get our basic setup
     ol
       li Go into src/components and delete the HelloWorld.vue file
@@ -17,6 +19,11 @@
       li
         | in src, update App.vue file:
         .gist(id='appGist')
+    .bottom-links
+      router-link(to='/start-project')
+        i.fas.fa-chevron-left
+      router-link(to='axios-setup')
+        i.fas.fa-chevron-right
 </template>
 
 <script>
@@ -34,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.links {
+.top-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -44,6 +51,12 @@ export default {
     margin: 0;
     color: #30dd4d;
   }
+}
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .gist {

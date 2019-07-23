@@ -1,12 +1,12 @@
 <template lang="pug">
   .home-container
-    .link
-      router-link(to='start-project') Next
+    .top-link
+      router-link(to='start-project')
+        i.fas.fa-chevron-right
     h1.welcome Welcome!
     .intro
       h2 Thank you so much for attending.
-      p My name is Ben Jehl. I am the founder/organizer of the Vue.js Tampa Bay meetup group.
-      p I attended Suncoast Developers Guild as a student, and now work as a Junior Software Engineer at KnowBe4.
+      p My name is Ben Jehl. A graduate of Suncoast Developers Guild and current Junior Software Engineer at KnowBe4, I am the founder/organizer of the Vue.js Tampa Bay meetup group.
       p If you ever have any questions, feedback, concerns or just want to say hi, you can reach me here:
       ul
         li
@@ -54,8 +54,9 @@
           tr
             td Vue Dev Tools
             td Chrome Web Store/Extensions
-      .next
-        h2 Next we will discuss starting a new project
+    .bottom-link
+      router-link(to='start-project')
+        i.fas.fa-chevron-right
 </template>
 
 <script>
@@ -115,8 +116,12 @@ li {
   margin: 50px 0;
 }
 
-.link {
+.top-link {
   margin-top: 11px;
+  display: flex;
+  justify-content: flex-end;
+}
+.bottom-link {
   display: flex;
   justify-content: flex-end;
 }

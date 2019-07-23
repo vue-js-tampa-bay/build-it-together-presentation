@@ -1,9 +1,11 @@
 <template lang="pug">
   .starting-container
-    .links
-      router-link(to='/') Previous
+    .top-links
+      router-link(to='/')
+        i.fas.fa-chevron-left
       h1 Step 1
-      router-link(to='/setup') Next
+      router-link(to='/setup')
+        i.fas.fa-chevron-right
     h2 Starting a new Vue.js project
     p In your terminal run:
     pre
@@ -40,6 +42,11 @@
       | Now go to your browser and navigate to 
       a(href='http://localhost:8080' target='_blank' rel='noreferrer noopener') http://localhost:8080
       |  and you will see your newly created Vue app!
+    .bottom-links
+      router-link(to='/')
+        i.fas.fa-chevron-left
+      router-link(to='/setup')
+        i.fas.fa-chevron-right
 </template>
 
 <script>
@@ -57,7 +64,7 @@ p {
   margin-top: 40px;
 }
 
-.links {
+.top-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -67,6 +74,13 @@ p {
     margin: 0;
     color: #30dd4d;
   }
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .starting-container {
