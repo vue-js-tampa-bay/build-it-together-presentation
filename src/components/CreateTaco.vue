@@ -1,11 +1,11 @@
 <template lang="pug">
-  .finish-home-container
+  .create-taco-container
     .links
-      router-link(to='/axios-setup') Previous
-      router-link(to='create-taco') Next
-    h2 Finishing up the Home.vue file
-    p In src/Home.vue:
-    .gist(id='finishHomeGist')
+      router-link(to='/finish-home') Previous
+      router-link(to='#') Next
+    h2 Now let's create the Taco view
+    p In src/views, create a file named Taco.vue and add this code:
+    .gist(id='createTacoGist')
 </template>
 
 <script>
@@ -13,9 +13,9 @@ import postscribe from 'postscribe'
 /* eslint-disable no-useless-escape */
 
 export default {
-  name: 'finishHome',
+  name: 'createTaco',
   mounted () {
-    postscribe('#finishHomeGist', `<script src="https://gist.github.com/benjaminkent/1922b62d0d0f9f3b9eb10adeab614db9.js"><\/script>`)
+    postscribe('#createTacoGist', `<script src="https://gist.github.com/benjaminkent/1922b62d0d0f9f3b9eb10adeab614db9.js"><\/script>`)
   }
 }
 </script>
@@ -28,7 +28,7 @@ export default {
 }
 
 
-.finish-home-container {
+.create-taco-container {
   background-color: #fff;
   width: 85%;
   border-radius: 5px;

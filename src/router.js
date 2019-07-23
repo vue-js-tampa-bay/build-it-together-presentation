@@ -5,6 +5,7 @@ import Start from './components/Start.vue'
 import Setup from './components/Setup.vue'
 import AxiosSetup from './components/AxiosSetup.vue'
 import FinishHome from './components/FinishHome.vue'
+import CreateTaco from './components/CreateTaco.vue'
 
 Vue.use(Router)
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/finish-home',
       name: 'finishHome',
       component: FinishHome
+    },
+    {
+      path: '/create-taco',
+      name: 'createTaco',
+      component: CreateTaco
     }
   ]
 })
