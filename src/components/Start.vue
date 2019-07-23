@@ -34,7 +34,12 @@
     p.margin-top 
       | Now go to your browser and navigate to 
       a(href='http://localhost:8080' target='_blank' rel='noreferrer noopener') http://localhost:8080
-      |  and you should see your newly created Vue app!
+      |  and you will see your newly created Vue app!
+    p.margin-top And let's open up this project in our text editor.
+    p
+      em Example: VS Code
+    pre
+      code $ code .
 </template>
 
 <script>
