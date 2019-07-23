@@ -6,6 +6,7 @@ import Setup from './components/Setup.vue'
 import AxiosSetup from './components/AxiosSetup.vue'
 import FinishHome from './components/FinishHome.vue'
 import CreateTaco from './components/CreateTaco.vue'
+import Done from './components/Done.vue'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/create-taco',
       name: 'createTaco',
       component: CreateTaco
+    },
+    {
+      path: '/done',
+      name: 'done',
+      component: Done
     }
   ]
 })

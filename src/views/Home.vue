@@ -3,6 +3,19 @@
     .link
       router-link(to='start-project') Next
     h1.welcome Welcome!
+    .intro
+      h2 Thank you so much for attending.
+      p My name is Ben Jehl. I am the founder/organizer of the Vue.js Tampa Bay meetup group.
+      p I attended Suncoast Developers Guild as a student, and now work as a Junior Software Engineer at KnowBe4.
+      p If you ever have any questions, feedback, concerns or just want to say hi, you can reach me here:
+      ul
+        li
+          a(href='www.linkedin.com/in/benjaminkentjehl' target='_blank' rel='noreferrer noopener') LinkedIn
+        li
+          a(href='https://www.meetup.com/Vue-js-Tampa-Bay/' target='_blank' rel='noreferrer noopener') Meetup
+        li
+          a(href='https://www.facebook.com/vue.js.tampabay' target='_blank' rel='noreferrer noopener') Facebook
+        li By email at: vue.js.tampabay@gmail.com
     .sponsor
       .sponsor-header
         h2 Special thank you to our sponsor
@@ -77,19 +90,15 @@ export default {
         margin-left: 7px;
       }
     }
-
-    ul {
-      li {
-        margin: 5px 0;
-      }
-    }
   }
 
   h2 {
     margin: 0;
   }
 }
-
+li {
+  margin: 5px 0;
+}
 .getting-started-container {
   margin-top: 30px;
   table {

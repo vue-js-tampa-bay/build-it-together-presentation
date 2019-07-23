@@ -2,10 +2,15 @@
   .create-taco-container
     .links
       router-link(to='/finish-home') Previous
-      router-link(to='#') Next
-    h2 Now let's create the Taco view
-    p In src/views, create a file named Taco.vue and add this code:
-    .gist(id='createTacoGist')
+      router-link(to='/done') Next
+    h2 Working on the Taco view
+    p Next we'll set up a route for our Taco view. In src/router.js add the route:
+    .gist(id='updateRoutes')
+    p.margin-top Ok, now we're ready to create the file.
+    ol
+      li In src/views, create a file named Taco.vue
+      li Add the following code:
+    .gist(id='createTaco')
 </template>
 
 <script>
@@ -15,7 +20,8 @@ import postscribe from 'postscribe'
 export default {
   name: 'createTaco',
   mounted () {
-    postscribe('#createTacoGist', `<script src="https://gist.github.com/benjaminkent/1922b62d0d0f9f3b9eb10adeab614db9.js"><\/script>`)
+    postscribe('#updateRoutes', `<script src="https://gist.github.com/benjaminkent/89564594d4a850de49c1cdd81ca6b3bf.js"><\/script>`)
+    postscribe('#createTaco', `<script src="https://gist.github.com/benjaminkent/3f4a71192777b2fa4bbf3c5ecd6dd98e.js"><\/script>`)
   }
 }
 </script>
@@ -27,6 +33,9 @@ export default {
   margin-bottom: 20px;
 }
 
+.margin-top {
+  margin-top: 50px;
+}
 
 .create-taco-container {
   background-color: #fff;
