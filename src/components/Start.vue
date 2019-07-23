@@ -28,18 +28,18 @@
       code $ yarn add axios
     pre
       code $ yarn add vue-axios
-    p.margin-top Then we will start the server so we can see our project in our local browser
+    p.margin-top And let's open up this project in our text editor.
+    p
+      em Example: VS Code
+    pre
+      code $ code .
+    p.margin-top Then we will start the server so we can see the project in our browser
     pre
       code $ yarn serve
     p.margin-top 
       | Now go to your browser and navigate to 
       a(href='http://localhost:8080' target='_blank' rel='noreferrer noopener') http://localhost:8080
       |  and you will see your newly created Vue app!
-    p.margin-top And let's open up this project in our text editor.
-    p
-      em Example: VS Code
-    pre
-      code $ code .
 </template>
 
 <script>
