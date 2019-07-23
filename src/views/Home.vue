@@ -53,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 .home-container {
   background-color: #fff;
-  width: 90%;
+  width: 85%;
   border-radius: 5px;
   margin: 0 auto;
   box-shadow: 0 0 2px 2px #22222220;
@@ -102,7 +102,7 @@ export default {
 }
 
 .next {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .link {

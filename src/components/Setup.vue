@@ -2,8 +2,8 @@
   .setup-container
     .links
       router-link(to='/start-project') Previous
-      router-link(to='#') Next
-    h2 New let's get our basic setup
+      router-link(to='axios-setup') Next
+    h2 Now let's get our basic setup
     ol
       li Go into src/components and delete the HelloWorld.vue file
       li Go into src/views and delete the About.vue file
@@ -45,7 +45,7 @@ export default {
 
 .setup-container {
   background-color: #fff;
-  width: 90%;
+  width: 85%;
   border-radius: 5px;
   margin: 0 auto;
   box-shadow: 0 0 2px 2px #22222220;

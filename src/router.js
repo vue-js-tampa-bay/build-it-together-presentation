@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Start from './components/Start.vue'
 import Setup from './components/Setup.vue'
+import AxiosSetup from './components/AxiosSetup.vue'
+import FinishHome from './components/FinishHome.vue'
 
 Vue.use(Router)
 
@@ -24,6 +26,16 @@ export default new Router({
       path: '/setup',
       name: 'setup',
       component: Setup
+    },
+    {
+      path: '/axios-setup',
+      name: 'axiosSetup',
+      component: AxiosSetup
+    },
+    {
+      path: '/finish-home',
+      name: 'finishHome',
+      component: FinishHome
     }
   ]
 })

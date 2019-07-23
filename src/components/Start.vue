@@ -13,7 +13,7 @@
       li Manually select features
       li add Router and CSS Pre-processors
       li y (When asked about using history mode for router)
-      li Sass/SCSS
+      li Sass/SCSS (with node-sass)
       li ESLint with error prevention only
       li Lint on save
       li In dedicated config files
@@ -23,6 +23,10 @@
       code $ cd < project name >
     pre
       code $ vue add pug
+    pre
+      code $ yarn add axios
+    pre
+      code $ yarn add vue-axios
     p.margin-top Then we will start the server so we can see our project in our local browser
     pre
       code $ yarn serve
@@ -55,7 +59,7 @@ p {
 
 .starting-container {
   background-color: #fff;
-  width: 90%;
+  width: 85%;
   border-radius: 5px;
   margin: 0 auto;
   box-shadow: 0 0 2px 2px #22222220;
