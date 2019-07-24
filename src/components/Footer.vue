@@ -22,10 +22,11 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 20px 0;
+  padding: 22px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 14px;
 
   p {
     margin: 0;
