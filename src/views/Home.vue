@@ -5,7 +5,8 @@
         i.fas.fa-chevron-right
     h1.welcome Welcome!
     .intro
-      h2 Thank you so much for attending.
+      h2 To view this presentation, go to:
+      h2.presentation-link bit.ly/vuetb-together
       p My name is Ben Jehl. A graduate of Suncoast Developers Guild and current Junior Software Engineer at KnowBe4, I am the founder/organizer of the Vue.js Tampa Bay meetup group.
       p If you ever have any questions, feedback, concerns or just want to say hi, you can reach me here:
       ul
@@ -111,7 +112,9 @@ li {
     }
   }
 }
-
+.presentation-link {
+  color: #30dd4d;
+}
 .next {
   margin: 50px 0;
 }
