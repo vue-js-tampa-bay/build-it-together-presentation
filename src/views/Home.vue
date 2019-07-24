@@ -21,7 +21,7 @@
     .sponsor
       .sponsor-header
         h2 Special thank you to our sponsor
-        h2.sponsor-name KnowBe4
+        img.kbfour(src='../assets/kmsat-logo.png' alt='KnowBe4')
       ul
         li World's Largest Provider of New-school Security Awareness Training
         li Headquartered in Clearwater. Locations UK, Netherlands, Germany, South Africa, Singapore, Brazil, Australia and plans for more
@@ -90,9 +90,9 @@ export default {
       flex-direction: column;
       align-items: center;
 
-      .sponsor-name {
-        color: #f26721;
-        font-size: 48px;
+      .kbfour {
+        height: 60px;
+        margin-top: 5px;
       }
     }
   }
